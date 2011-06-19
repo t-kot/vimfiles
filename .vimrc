@@ -83,36 +83,22 @@ set t_Co=256
 set fileencoding=utf-8
 colorscheme colorful256 
 set backupdir=$HOME/vimbackup 
-"if filereadable($VIM . '/vimrc') && filereadable($VIM . '/ViMrC')
-"  set tags=./tags,tags
-"endif
-"if has('unix') && !has('gui_running') && !has('gui_macvim')
-"  let uname = system('uname')
-"  if uname =~? "linux"
-"    set term=builtin_linux
-"  elseif uname =~? freebsd"
-"    set term=builtin_cons25
-"  elseif uname =~? Darwin"
-"    set term=ansi
-"  else
-"    set term=builtin_xterm
-"  endif
-"  unlet uname
-"endif
-"if !has('gui_running') && has('xterm_clipboard')
-"  set clipboard=exclude:cons\\\|linux\\\|cygwin\\\|rxvt\\\|screen
-"endif
-"if has('win32') && $PATH !~? '\(^\|;\)' . escape($VIM, '\\') . '\(;\|$\)'
-"  let $PATH = $VIM . ';' . $PATH
-"endif
-"
-"if has('mac')
-"  set iskeyword=@,48-57,_,128-167,224-235
-"endif
-"set formatexpr=autofmt#japanese#formatexpr()
-"let $PATH = simplify($VIM . '/../../MacOS') . ':' . $PATH
-"set runtimepath+=$VIM/plugins/pathogen
-"set browsedir=buffer
+
+"-------------------------------------------
+" keymap
+"-------------------------------------------
+
+"========================== normal mode
+nmap <ESC><ESC> :noh<CR>
+
+"========================== visual mode
+
+
+"========================== insert mode
+
+
+"========================== command  mode
+
 " neocomplcache
 let g:neocomplcache_enable_at_starup =1 "起動時に有効
 "neocomplcache sample
@@ -193,8 +179,6 @@ let g:neocomplcache_enable_at_starup =1 "起動時に有効
 
 au BufRead,BufNewFile *.as set ft=javascript syntax=javascript
 
-:map <F12> :!/usr/bin/python2.5
-nmap ,t :tabnew
 
 "taglist
 let Tlist_Ctags_Cmd = "/usr/bin/ctags " "ctagsのパス
