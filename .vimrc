@@ -182,3 +182,5 @@ au BufRead,BufNewFile *.as set ft=javascript syntax=javascript
 
 "taglist
 let Tlist_Ctags_Cmd = "/usr/bin/ctags " "ctagsのパス
+
+autocmd FileType = php set tabstop=4 shiftwidth=2
