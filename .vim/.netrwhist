@@ -1,5 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_cnt =4
 let g:netrw_dirhist_1='/Users/kotohata/Sites/iphone/ch02'
 let g:netrw_dirhist_2='/Users/kotohata'
 let g:netrw_dirhist_3='/Users/kotohata/misc/jqueryyoutube/js'
+let g:netrw_dirhist_4='/Users/kotohata/dogtraining-app-repos/test'
